@@ -12,12 +12,14 @@ Do you think **Android 7** (API 24) or even **Android 5** (API 21) is dead? Do y
 
 ## 🧪 THE ULTIMATE WEAPON: `desugar_jdk_libs_nio:2.1.5` 🧪
 
-We have performed a legendary "surgical operation": Forcing **NPatch/LSPatch** (originally designed for Android 8.1+) to run smoothly on an ancient **Android 7** device (Oppo F5). We stripped away the rotting C++ core and transplanted the **Epic Framework**. 💉🏗️
+We have performed a legendary "architectural revival": Enabling **NPatch/LSPatch** (originally designed for Android 8.1+) to run perfectly on an ancient **Android 7** device (Oppo F5). 
+
+By leveraging the power of **Advanced Desugaring**, we bridged the decade-wide gap between modern system requirements and legacy hardware. 💉🏗️
 
 ### Why MUST you use this today?
-1.  **API Time Travel:** Bring the full power of Java 11/17 back to the API 21 era. 
-2.  **Eliminate `NoClassDefFoundError`:** No more fear of missing classes when handling complex system files.
-3.  **Device Liberation:** Smash the chains of "Planned Obsolescence" enforced by Big Tech.
+1.  **API Time Travel:** Bring the full power of Java 11/17 (including `java.nio.file`) back to the API 21 era. 
+2.  **Modern Tools on Old Souls:** Allow complex modding tools like NPatch to breathe again on Android 7 without rewriting the entire source code.
+3.  **Device Liberation:** Prove that Google's own tools can be used to defy the "Planned Obsolescence" they created.
 
 ---
 
