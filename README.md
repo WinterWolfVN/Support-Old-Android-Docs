@@ -45,9 +45,13 @@ dependencies {
 
 ```
 
+---
+
 ## 😈 A MESSAGE FROM THE GREAT WIZARD 🧙‍♂️
 A real developer isn't someone who just chases thousand-dollar flagships. A real developer is a System Manipulator—someone capable of reviving "old souls" and making them serve humanity with peak optimization. 🏗️☕
 
 Don't let your code become a barrier. Make it a **BRIDGE**.
+
+> "No equipment is obsolete, only unbroken limits!"
 
 Join me in building a tech world where version discrimination no longer exists! 🍷🔥🚀
