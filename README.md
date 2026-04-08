@@ -37,6 +37,27 @@ dependencies {
 }
 ```
 
+### Modern Implementation (Version Catalog)
+
+If you are using `libs.versions.toml`, add the following:
+
+**libs.versions.toml**
+```toml
+[versions]
+desugar_jdk_libs = "2.1.5"
+
+[libraries]
+desugar-jdk-libs-nio = { group = "com.android.tools", name = "desugar_jdk_libs_nio", version.ref = "desugar_jdk_libs" }
+```
+
+**build.gradle**
+
+```gradle
+dependencies {
+    coreLibraryDesugaring(libs.desugar.jdk.libs.nio)
+}
+```
+
 ## 2. Code Implementation & Patching
 It's not just about adding a dependency; it's about modifying the core logic to utilize the backported APIs effectively.
 
