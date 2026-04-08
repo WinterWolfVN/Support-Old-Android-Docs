@@ -18,7 +18,12 @@ By utilizing the latest desugaring libraries, we can backport the following to l
 
 ## 1. Gradle Configuration
 
-To support modern Java features on your legacy project, update your `build.gradle` (Module: app) with the following configuration:
+Depending on your project structure, choose one of the following methods to implement modern Java support.
+
+## Option A: Classic Implementation (Direct)
+Best for quick testing or older projects not yet using Version Catalogs.
+
+Update your `build.gradle` (Module: app):
 
 ```gradle
 android {
@@ -32,16 +37,16 @@ android {
 }
 
 dependencies {
-    // Required for java.nio and Java 17 backporting on API 21-25
+    // Direct dependency for java.nio and Java 17 support
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs_nio:2.1.5")
 }
 ```
 
-### Modern Implementation (Version Catalog)
+## Option B: Modern Implementation (Version Catalog)
+Recommended for professional projects using Gradle 7.4+ for better dependency management.
 
-If you are using `libs.versions.toml`, add the following:
+**Step 1**: Add to `gradle/libs.versions.toml`
 
-**libs.versions.toml**
 ```toml
 [versions]
 desugar_jdk_libs = "2.1.5"
@@ -50,11 +55,20 @@ desugar_jdk_libs = "2.1.5"
 desugar-jdk-libs-nio = { group = "com.android.tools", name = "desugar_jdk_libs_nio", version.ref = "desugar_jdk_libs" }
 ```
 
-**build.gradle**
+**Step 2**: Apply to `build.gradle` (Module: app):
 
 ```gradle
+android {
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
 dependencies {
-    coreLibraryDesugaring(libs.desugar.jdk.libs.nio)
+    // Reference from the Version Catalog
+    coreLibraryDesugaring(libs.android.tools.desugarJdkLibsNio)
 }
 ```
 
