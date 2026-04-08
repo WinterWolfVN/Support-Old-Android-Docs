@@ -76,6 +76,12 @@ For frameworks that are already compiled, relying on Gradle isn't enough. We uti
 ## Why Legacy Support Matters
 While "planned obsolescence" is common in the tech industry, millions of devices globally still operate on Android 5.0 through 7.1. Proper optimization and manual code adjustments allow these devices to remain functional and compatible with modern tools without requiring a complete source code rewrite.
 
+## Project Milestones
+
+* **2026-04-08:** Official repository launch and technical documentation release.
+* **2026-04-08:** Achieved **Top 3 Trending** on `r/AndroidDev` within just **30 minutes** of posting
+* **Proof of Concept:** Successfully verified on Oppo F5 (Android 7.1.1 / API 25) running modern Java 17 and NIO-based frameworks.
+  
 ## FAQ
 ## Q: Does this significantly impact the APK size?
 A: There is a minor overhead due to the desugaring library, but it is a necessary trade-off for full Java 17/NIO support on older API levels.
