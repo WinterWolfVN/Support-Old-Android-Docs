@@ -55,3 +55,18 @@ Don't let your code become a barrier. Make it a **BRIDGE**.
 > "No equipment is obsolete, only unbroken limits!"
 
 Join me in building a tech world where version discrimination no longer exists! 🍷🔥🚀
+
+---
+
+### 🚀 MILESTONES
+- **2026-04-08:** Project Launch.
+- **2026-04-08:** Reach 1,000+ views on Reddit & Top 3 Trending on `r/AndroidDev` in just 5 hours! 🍾. 
+
+### 🛠️ FAQ
+**Q: Does it significantly increase APK size?**
+
+A: Minimal. The trade-off for full Java 17 support on API 21+ is absolutely worth every byte 🏗️ .
+
+**Q: Is it stable for production?**
+
+A: We are currently testing it on real-world "Frankenstein" devices (like Oppo F5). Thank you everyone 😇. 
