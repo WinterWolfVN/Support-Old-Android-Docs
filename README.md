@@ -43,7 +43,7 @@ It's not just about adding a dependency; it's about modifying the core logic to 
 ## Utilizing NIO on Legacy Devices (Java Example)
 Once desugaring is enabled, you can safely use java.nio.file.Files to handle complex file structures within modding frameworks without triggering a NoClassDefFoundError on Android 7:
 
-```
+```java
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
