@@ -75,7 +75,7 @@ dependencies {
 ### Option C: Kotlin DSL (`build.gradle.kts`)
 For projects using Kotlin-based build scripts:
 
-```kotlin
+```gradle
 android {
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
