@@ -72,6 +72,23 @@ dependencies {
 }
 ```
 
+### Option C: Kotlin DSL (`build.gradle.kts`)
+For projects using Kotlin-based build scripts:
+
+```kotlin
+android {
+    compileOptions {
+        isCoreLibraryDesugaringEnabled = true
+    }
+}
+
+dependencies {
+    coreLibraryDesugaring(libs.android.tools.desugarJdkLibsNio)
+    // OR
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs_nio:2.1.5")
+}
+```
+
 ## 2. Code Implementation & Patching
 It's not just about adding a dependency; it's about modifying the core logic to utilize the backported APIs effectively.
 
