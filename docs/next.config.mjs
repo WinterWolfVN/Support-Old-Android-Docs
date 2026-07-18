@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
-const repoName = 'support-old-android-docs'
+const repoName = 'Support-Old-Android-Docs'
 
 const nextConfig = {
   output: 'export',
