@@ -14,4 +14,5 @@ Proof of Concept: Successfully verified on Oppo F5 (Android 7.1.1 / API 25) runn
 
 # Q: Is this configuration stable?
 A: Yes. It has been tested thoroughly on real hardware (Oppo F5, API 25) with heavy modding tools.
+
 Community Impact: High engagement from the developer community, proving the ongoing relevance of legacy device optimization.
